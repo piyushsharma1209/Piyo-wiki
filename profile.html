@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Piyo Wikipedia</a>
+        <ul class="navbar-nav ml-auto">
+            <button class="btn btn-primary" id="logoutButton">Logout</button>
+        </ul>
+    </nav>
+    <div class="container mt-4" id="profileContainer">
+        <div class="create-post-form">
+            <h2>Create Post</h2>
+            <hr>
+            <form id="createPostForm">
+                <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input type="text" class="form-control" id="postTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea class="form-control" id="postContent" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Post</button>
+            </form>
+        </div>
+
+        <h2>My Posts</h2>
+        <hr>
+        <div id="myPostsContainer"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2023 Piyo Wikipedia. All rights reserved.</p>
+    </footer>
+
+
+    <script src="src/js/profile.js"></script>
+</body>
+
+</html>
